@@ -1,0 +1,16 @@
+<%- include("partial/header.ejs") %>
+<h1>Daily Journal</h1>
+
+<form class="" action="/compose" method="POST">  
+  <div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input type="text" class="form-control" name="postTitle" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="post" class="form-label">Post</label>
+    <textarea class="form-control" name="postBody" rows="5"></textarea>
+  </div>
+  <p></p>
+  <button type="submit" class="btn btn-primary">Publish</button>
+</form>
+<%- include("partial/footer.ejs") %>
